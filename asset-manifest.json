@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/Hello-React/static/js/main.54f99f8e.chunk.js",
-    "main.js.map": "/Hello-React/static/js/main.54f99f8e.chunk.js.map",
-    "runtime-main.js": "/Hello-React/static/js/runtime-main.ddc3fc36.js",
-    "runtime-main.js.map": "/Hello-React/static/js/runtime-main.ddc3fc36.js.map",
-    "static/js/2.0bc1aa46.chunk.js": "/Hello-React/static/js/2.0bc1aa46.chunk.js",
-    "static/js/2.0bc1aa46.chunk.js.map": "/Hello-React/static/js/2.0bc1aa46.chunk.js.map",
-    "static/js/3.ba046b90.chunk.js": "/Hello-React/static/js/3.ba046b90.chunk.js",
-    "static/js/3.ba046b90.chunk.js.map": "/Hello-React/static/js/3.ba046b90.chunk.js.map",
+    "main.js": "/Hello-React/static/js/main.5c554262.chunk.js",
+    "main.js.map": "/Hello-React/static/js/main.5c554262.chunk.js.map",
+    "runtime-main.js": "/Hello-React/static/js/runtime-main.17a8dc8c.js",
+    "runtime-main.js.map": "/Hello-React/static/js/runtime-main.17a8dc8c.js.map",
+    "static/js/2.936b9193.chunk.js": "/Hello-React/static/js/2.936b9193.chunk.js",
+    "static/js/2.936b9193.chunk.js.map": "/Hello-React/static/js/2.936b9193.chunk.js.map",
+    "static/js/3.5edd1a58.chunk.js": "/Hello-React/static/js/3.5edd1a58.chunk.js",
+    "static/js/3.5edd1a58.chunk.js.map": "/Hello-React/static/js/3.5edd1a58.chunk.js.map",
     "index.html": "/Hello-React/index.html",
-    "static/js/2.0bc1aa46.chunk.js.LICENSE.txt": "/Hello-React/static/js/2.0bc1aa46.chunk.js.LICENSE.txt"
+    "static/js/2.936b9193.chunk.js.LICENSE.txt": "/Hello-React/static/js/2.936b9193.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ddc3fc36.js",
-    "static/js/2.0bc1aa46.chunk.js",
-    "static/js/main.54f99f8e.chunk.js"
+    "static/js/runtime-main.17a8dc8c.js",
+    "static/js/2.936b9193.chunk.js",
+    "static/js/main.5c554262.chunk.js"
   ]
 }
