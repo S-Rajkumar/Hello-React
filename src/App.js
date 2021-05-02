@@ -6,8 +6,9 @@ import ForceUpdateDemo from './components/forceUpdate.js';
 import SetStateDemo from './components/setState.js';
 import FindDOMNodeDemo from './components/findDOMNode.js';
 import ComponentLifeCycle from './components/componentLifeCycle.js';
+import FormFields from './components/formFields.js';
 
-class App extends React.Component {
+class Learn extends React.Component {
   render(){
     return(
       <div>
@@ -18,9 +19,22 @@ class App extends React.Component {
         <ForceUpdateDemo />
         <FindDOMNodeDemo />
         <ComponentLifeCycle />
+        <FormFields />
       </div>
     );
   }
 }
 
-export default App;
+class TinyProjects extends React.Component {
+  render() {
+    return(
+      <div>
+        <Header />
+        <p>comming soon...</p>
+      </div>
+    );
+  }
+}
+
+export default Learn;
+export {TinyProjects};
