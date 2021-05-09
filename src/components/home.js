@@ -8,10 +8,10 @@ class HomeChild extends React.Component {
                 {/*<Link to = "/">
                     <li>Home</li>
                 </Link>*/}
-                <Link to = "/projects">
+                <Link to = "/Hello-React/projects">
                     <li>Projects</li>
                 </Link>
-                <Link to = "/learn">
+                <Link to = "/Hello-React/learn">
                     <li>React Practices</li>
                 </Link>
             </div>
