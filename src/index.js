@@ -1,12 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
 
-import Learn from './App';
+import {Learn, TinyProjects, Home, NotFound} from './App';
+import Headers from './components/header.js';
 import reportWebVitals from './reportWebVitals';
+import {UDMNXPDU} from './udmnxpdu.js';
+
+function App() {
+  const appContainer = () => {
+    return(
+    <div>
+      <Headers />
+    <Switch>
+      <Route path = "/" exact component = {Home} />
+      <Route path = "/learn" exact component = {Learn} />
+      <Route path = "/projects" exact component = {TinyProjects} />
+      <Route path = "/404" component = {NotFound} />
+      <Redirect to = "/404" />
+    </Switch>
+    </div>
+    )
+  };
+
+  return(
+    <BrowserRouter>
+      <Switch>
+        <Route path = "/udmnxpdu" exact sensitive = {true} component = {UDMNXPDU} />
+        <Route component = {appContainer} />
+      </Switch>
+    </BrowserRouter>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Learn />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

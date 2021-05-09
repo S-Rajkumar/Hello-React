@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/header.js';
 import PersonTable from './components/tableDataLoad.js';
 import StateAndPropsDemo from './components/stateAndProps.js';
 import ForceUpdateDemo from './components/forceUpdate.js';
@@ -7,12 +6,13 @@ import SetStateDemo from './components/setState.js';
 import FindDOMNodeDemo from './components/findDOMNode.js';
 import ComponentLifeCycle from './components/componentLifeCycle.js';
 import FormFields from './components/formFields.js';
+import TicTacToe from './projects/tic-tac-toe/index.js';
+import HomeChild from './components/home.js';
+import NotFoundComponent from './components/404.js';
 
-class Learn extends React.Component {
-  render(){
+function Learn() {
     return(
       <div>
-        <Header />
         <PersonTable />
         <StateAndPropsDemo title = "props" />
         <SetStateDemo />
@@ -22,19 +22,31 @@ class Learn extends React.Component {
         <FormFields />
       </div>
     );
-  }
 }
 
-class TinyProjects extends React.Component {
-  render() {
+function Home() {
+  return(
+    <div>
+      <HomeChild />
+    </div>
+  )
+}
+
+function NotFound() {
+  return(
+    <div>
+      <NotFoundComponent />
+    </div>
+  )
+}
+
+function TinyProjects() {
     return(
       <div>
-        <Header />
-        <p>comming soon...</p>
+        <h1>Tic Tac Toe</h1>
+        <TicTacToe />
       </div>
     );
-  }
 }
 
-export default Learn;
-export {TinyProjects};
+export {Learn, TinyProjects, Home, NotFound};
