@@ -9,7 +9,9 @@ import FormFields from './components/formFields.js';
 import TicTacToe from './projects/tic-tac-toe/index.js';
 import HomeChild from './components/home.js';
 import NotFoundComponent from './components/404.js';
+
 import {UseStateDemo, UseStateExample, UseStateAddUser} from './fn_components/useStateDemo';
+import {UseEffectDemo, UseEffectExample} from './fn_components/useEffectDemo';
 
 function Learn() {
     return(
@@ -24,6 +26,8 @@ function Learn() {
         <UseStateDemo title = "useState"/>
         <UseStateExample/>
         <UseStateAddUser />
+        <UseEffectDemo />
+        <UseEffectExample />
       </div>
     );
 }
