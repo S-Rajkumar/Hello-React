@@ -12,6 +12,7 @@ import NotFoundComponent from './components/404.js';
 
 import {UseStateDemo, UseStateExample, UseStateAddUser} from './fn_components/useStateDemo';
 import {UseEffectDemo, UseEffectExample} from './fn_components/useEffectDemo';
+import { UseContextDemo } from './fn_components/useContextDemo.js';
 
 function Learn() {
     return(
@@ -28,6 +29,7 @@ function Learn() {
         <UseStateAddUser />
         <UseEffectDemo />
         <UseEffectExample />
+        <UseContextDemo />
       </div>
     );
 }
