@@ -6,13 +6,16 @@ import SetStateDemo from './components/setState.js';
 import FindDOMNodeDemo from './components/findDOMNode.js';
 import ComponentLifeCycle from './components/componentLifeCycle.js';
 import FormFields from './components/formFields.js';
-import TicTacToe from './projects/tic-tac-toe/index.js';
 import HomeChild from './components/home.js';
 import NotFoundComponent from './components/404.js';
+
+import TicTacToe from './projects/tic-tac-toe/index.js';
+import ApiUseEffect from './projects/practiceAPI/index.js';
 
 import {UseStateDemo, UseStateExample, UseStateAddUser} from './fn_components/useStateDemo';
 import {UseEffectDemo, UseEffectExample} from './fn_components/useEffectDemo';
 import { UseContextDemo } from './fn_components/useContextDemo.js';
+import {ReduxCounter} from './fn_components/reduxReactLearn.js';
 
 function Learn() {
     return(
@@ -30,6 +33,7 @@ function Learn() {
         <UseEffectDemo />
         <UseEffectExample />
         <UseContextDemo />
+        <ReduxCounter />
       </div>
     );
 }
@@ -55,6 +59,8 @@ function TinyProjects() {
       <div>
         <h1>Tic Tac Toe</h1>
         <TicTacToe />
+        <h1>API Practice</h1>
+        <ApiUseEffect />
       </div>
     );
 }
