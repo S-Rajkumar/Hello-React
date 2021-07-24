@@ -1,68 +1,22 @@
 import React from 'react';
-import PersonTable from './components/tableDataLoad.js';
-import StateAndPropsDemo from './components/stateAndProps.js';
-import ForceUpdateDemo from './components/forceUpdate.js';
-import SetStateDemo from './components/setState.js';
-import FindDOMNodeDemo from './components/findDOMNode.js';
-import ComponentLifeCycle from './components/componentLifeCycle.js';
-import FormFields from './components/formFields.js';
-import HomeChild from './components/home.js';
-import NotFoundComponent from './components/404.js';
+import {useSelector, useDispatch} from 'react-redux';
+import {decrement, increment, sing_in} from './actions';
 
-import TicTacToe from './projects/tic-tac-toe/index.js';
-import ApiUseEffect from './projects/practiceAPI/index.js';
 
-import {UseStateDemo, UseStateExample, UseStateAddUser} from './fn_components/useStateDemo';
-import {UseEffectDemo, UseEffectExample} from './fn_components/useEffectDemo';
-import { UseContextDemo } from './fn_components/useContextDemo.js';
-import {ReduxCounter} from './fn_components/reduxReactLearn.js';
-
-function Learn() {
-    return(
-      <div>
-        <PersonTable />
-        <StateAndPropsDemo title = "props" />
-        <SetStateDemo />
-        <ForceUpdateDemo />
-        <FindDOMNodeDemo />
-        <ComponentLifeCycle />
-        <FormFields />
-        <UseStateDemo title = "useState"/>
-        <UseStateExample/>
-        <UseStateAddUser />
-        <UseEffectDemo />
-        <UseEffectExample />
-        <UseContextDemo />
-        <ReduxCounter />
-      </div>
-    );
-}
-
-function Home() {
-  return(
-    <div>
-      <HomeChild />
+function App() {
+  const counter = useSelector(state => state.counter);
+  const isLogged = useSelector(state => state.isLogged);
+  const dispatch = useDispatch();
+  return (
+    <div className="App">
+      <h1>Hello React Redux</h1>
+      <h3>counter : {counter}</h3> {'\u00A0'}
+      <button onClick = { () => dispatch(increment(3))} >+</button> {'\u00A0'}
+      <button onClick = { () => dispatch(decrement(2))} >-</button> {'\u00A0'}
+      <button onClick = { () => dispatch(sing_in(counter))}>Try Sing In</button>
+      {isLogged ? <h2>!!! Thank You !!!</h2> : ''}
     </div>
-  )
+  );
 }
 
-function NotFound() {
-  return(
-    <div>
-      <NotFoundComponent />
-    </div>
-  )
-}
-
-function TinyProjects() {
-    return(
-      <div>
-        <h1>Tic Tac Toe</h1>
-        <TicTacToe />
-        <h1>API Practice</h1>
-        <ApiUseEffect />
-      </div>
-    );
-}
-
-export {Learn, TinyProjects, Home, NotFound};
+export default App;

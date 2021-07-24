@@ -1,28 +1,71 @@
-#Hello React
-public
-    index.html -> template file
-        this file is render when we hit our running url
-src
-    App.js -> Module
-        this file contains all the components code.
-    index.js -> Controller
-        this file is responsible for template and component
-    App.test.js -> Test File
-        this file contains all the test cases for this project
-    reportWebVitals.js -> Performance
-        this file is used to measure the real life performance of this project.
-    setupTest.js -> Test File
-    package.json -> Manifest
-        this file contains all the meta details about this project
 
-React :
-    Component :
-        if you want to create a react component the you have extend React.Component
-        The React Component return one wrapped element.
-    cssStyle :
-        inline style attributes use camelCase
-        example : font-size == fontSize
-    export :
-        you have to export a class if you want to use in another file.
-        like from App.js App class use in index.js ( import )
-    
+## Command used to create this project
+
+### `yarn create react-app hello-redux`
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.
+
+## Structure Map
+
+[Map](docs/chart.png)
+
+## command used to install redux
+
+### `yarn add redux`
+
+### `yarn add react-redux`
+
+## Redux DevTool FireFox extension
+
+### `https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/`
+
+## Docs
+
+Redux eliminates data not to be inside the components. 
+
+- Store
+    - like DB [for Me]. 
+    - Ref. src/index.js #11 - #14
+
+- Reducers
+    - you can write morethan one reducer
+    - you can combine multiple reducers in single store
+    - here our data manipulation based on inputs
+    - it returns state/data we called.
+
+- Actions
+    - it defines what action to be perform.
+    - this will define what reducer case to be execute
+    - this return type of actino and payload that we need for data manipulation in reducer
+
+- useSelector
+    - useSelector used to get state/data values
+
+- Dispatch
+    - this used to trigger/call the actions
+
+## Flow
+ 1.Store
+    - here allready we defined actions and reducers
+ 2.Dispatch
+    - call the action you want
+ 3.useSelector
+    - get value of state/data
+
+
+
+
